@@ -1,11 +1,11 @@
 package org.example;
 
-import java.time.*;
-
 import static org.example.Birthday.*;
 
 public class App {
+
     public static void main(String[] args) {
-          System.out.println(getAge(1976,10,20));
+        System.out.printf("\nВозраст в днях: %d", getAge(1996, 10, 20));
+        System.out.printf("\nСлед. днюха через %s дней будет: %s",returnRound(getAge(1996, 10, 20),1000), nextBirthday(1996,10,20));
     }
 }
