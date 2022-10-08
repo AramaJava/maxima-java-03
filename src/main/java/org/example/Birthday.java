@@ -19,14 +19,8 @@ public class Birthday {
     }
 
     public static int returnRound(int period, int digit) {
-        if (period < digit) return digit;
-        if (period % digit == 0) {
-            return period;
-        } else {
-            for (int i = 1; i < digit; i++) {
-                if ((period + i) % digit == 0) return period + i;
-            }
+        if (period % digit == 0) return period; else {
+            return period - period % digit + digit;
         }
-        return 0;
     }
 }
