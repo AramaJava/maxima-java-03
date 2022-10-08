@@ -5,8 +5,9 @@ public class Cat {
     private int weight;
     private boolean isAngry;
 
-    public Cat(String name, int weight) throws IncorrectCatWeightException {
+    public Cat(String name, int weight, boolean isAngry) throws IncorrectCatWeightException {
         this.name = name;
+        this.isAngry = isAngry;
         setWeight(weight);
         System.out.printf("\nСоздан кот с именем %s и весом %d", this.name, this.weight);
     }

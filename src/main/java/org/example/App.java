@@ -9,7 +9,7 @@ public class App {
         //System.out.printf("\nСлед. днюха через %s дней будет: %s",returnRound(getAge(1896, 10, 20),1000), nextBirthday(1896,10,20));
         // Barsik.setWeight(-10);
 
-        Cat murzik = CatFactory.createCat("Murzik", 33);
+        Cat murzik = CatFactory.createCat("Murzik", 10);
         Cat barsik = CatFactory.createCat("Barsik", -3);
 
         System.out.printf("\nКот %s - %s", murzik.getName(), (murzik.isAngry() ? "злой" : "добрый"));
