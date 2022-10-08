@@ -7,11 +7,8 @@ public class Cat {
 
     public Cat(String name, int weight) throws IncorrectCatWeightException {
         this.name = name;
-        if (weight<0){
-            throw new IncorrectCatWeightException("Вес кота введен некорректно!");
-        }
-        this.weight = weight;
-        System.out.printf("\nСоздан кот с именем %s и весом %d", this.name, this.weight);;
+        setWeight(weight);
+        System.out.printf("\nСоздан кот с именем %s и весом %d", this.name, this.weight);
     }
 
     public String getName() {
@@ -26,9 +23,9 @@ public class Cat {
         return weight;
     }
 
-    public void setWeight(int weight) throws IncorrectCatWeightException {
-        if (weight<0){
-             throw new IncorrectCatWeightException("Вес кота введен некорректно!");
+    public void setWeight(int weight) throws IncorrectCatWeightException{
+        if (weight < 0) {
+            throw new IncorrectCatWeightException(" <-- Вес кота введен некорректно!");
         }
         this.weight = weight;
     }
@@ -40,7 +37,6 @@ public class Cat {
     public void setAngry(boolean angry) {
         isAngry = angry;
     }
-
 
 
 }
