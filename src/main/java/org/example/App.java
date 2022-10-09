@@ -23,7 +23,7 @@ public class App {
             throw new IncorrectCatWeightException("Неправильно введен вес!");
         }*/
 
-/*
+
 
        TextTransformer textTransformer = new TextTransformer();
         try {
@@ -32,7 +32,7 @@ public class App {
         catch (FileNotFoundException e){
             System.out.println("Файл не найден");
         }
-*/
+
 
         StreamTransformer streamTransformer = new StreamTransformer();
         try {
