@@ -10,7 +10,7 @@ public class TextTransformer implements Transformable {
     public void transform(String filein, String fileout) throws FileNotFoundException {
         try {
             FileReader csvReader = new FileReader(filein);
-            BufferedReader bufCsvReader = new BufferedReader(csvReader);
+            BufferedReader bufCsvReader = new BufferedReader(new FileReader(filein));
             FileWriter txtWriter = new FileWriter(fileout);
             String readRow;
             String writeRow;
@@ -27,7 +27,7 @@ public class TextTransformer implements Transformable {
             csvReader.close();
 
         } catch (Exception e) {
-            System.out.println(e.getLocalizedMessage());
+            e.printStackTrace();
         }
     }
 }

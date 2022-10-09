@@ -23,16 +23,24 @@ public class App {
             throw new IncorrectCatWeightException("Неправильно введен вес!");
         }*/
 
+/*
 
-        TextTransformer textTransformer = new TextTransformer();
+       TextTransformer textTransformer = new TextTransformer();
         try {
             textTransformer.transform("input.csv","out.txt");
         }
         catch (FileNotFoundException e){
             System.out.println("Файл не найден");
         }
+*/
 
-
+        StreamTransformer streamTransformer = new StreamTransformer();
+        try {
+            streamTransformer.transform("input.csv","out.txt");
+        }
+        catch (FileNotFoundException e){
+            System.out.println("Файл не найден");
+        }
 
     }
 }
