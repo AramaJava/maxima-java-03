@@ -9,7 +9,7 @@ public class Cat {
         this.name = name;
         this.isAngry = isAngry;
         setWeight(weight);
-        System.out.printf("Создан кот с именем %s и весом %d\n", this.getName(), this.getWeight());
+
     }
 
     public String getName() {
@@ -26,7 +26,7 @@ public class Cat {
 
     public void setWeight(int weight) throws IncorrectCatWeightException{
         if (weight < 0) {
-            throw new IncorrectCatWeightException("Вес кота введен некорректно!");
+            throw new IncorrectCatWeightException("Вес введен некорректно!");
         }
         this.weight = weight;
     }
@@ -38,7 +38,6 @@ public class Cat {
     public void setAngry(boolean angry) {
         isAngry = angry;
     }
-
 
 }
 

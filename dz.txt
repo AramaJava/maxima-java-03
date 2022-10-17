@@ -1,13 +1,33 @@
 Задача:
 Описать класс Dog с методами аналогичными классу Cat, но не имеющего с ним общих предков.
 
-Описать интерфейс AnimalKitchen — описывает кормление группы любых животных. Методы:
+Описать интерфейс AnimalKitchen — описывает кормление группы любых животных. 
+
+Методы:
 
 void add ( экземпляр животного) — добавить животное в очередь.
 
 void feed() - покормить очередное животное (исключить его из очереди на кормление).
 
+
 Описать два класса QueueKitchen и StackKitchen, реализующие кормление животных по принципам FIFO и LIFO соответственно.
 
-
 Подсказка: В каждом классе должно быть определено свойство animals типа ArrayList
+
+
+
+3.6 Stream API, лямбда оператор и ссылки на методы
+Задача:
+Описать класс CatStatistics со статическими методами:
+
+ArrayList<Cat> sortByNameAscending(ArrayList<Cat> cats) — возвращает список котов, отсортировав по имени по возрастанию.
+
+ArrayList<Cat> sortByWeightDescending(ArrayList<Cat> cats) — возвращает список котов, отсортировав по убыванию веса.
+
+ArrayList<Cat> removeFirstAndLast (ArrayList<Cat> cats) — возвращает список котов кроме первого и последнего.
+
+Cat findFirstNonAngryCat (ArrayList<Cat> cats) — возвращает первого не-сердитого кота в списке.
+
+int getCommonWeight(ArrayList<Cat> cats, boolean onlyAngry) — возвращает суммарный вес всех котов (если параметр onlyAngry равен true, то только сердитых котов).
+
+Map<String, List<Cat>> groupCatsByFirstLetter (ArrayList<Cat> cats) — возвращает список котов сгруппировав их по первой букве имени и отсортировав группировку по возрастанию.
