@@ -1,17 +1,17 @@
 package org.example;
 
-public class Dog {
+public class Dog extends Cat {
+    public Dog(String name, int weight, boolean isAngry) throws IncorrectAnimalWeightException {
+        super(name, weight, isAngry);
+    }
 
-        private String name;
+
+
+        /*private String name;
         private int weight;
         private boolean isAngry;
 
-        public Dog(String name, int weight, boolean isAngry) throws IncorrectAnimalWeightException {
-            this.name = name;
-            this.isAngry = isAngry;
-            setWeight(weight);
 
-        }
 
         public String getName() {
             return name;
@@ -42,7 +42,7 @@ public class Dog {
         @Override
         public String toString() {
             return getName();
-        }
+        }*/
 }
 
 

@@ -4,16 +4,20 @@ import java.util.*;
 
 public class StackKitchen<T> implements AnimalKitchen<T> {
 
-    Deque<T> animals = new ArrayDeque<>();
+    public List<T> animals = new ArrayList<>();
+
+    public ArrayList<T> getListOfAnimals(){
+     return (ArrayList<T>) animals;
+    }
 
     @Override
     public void add(T animal) {
-        animals.push(animal);
+        getListOfAnimals().add(animal);
     }
 
     @Override
     public void feed() {
-            animals.pop();
+        getListOfAnimals().remove(getListOfAnimals().size()-1);
 
     }
 }

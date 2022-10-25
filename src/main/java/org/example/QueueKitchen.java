@@ -1,19 +1,25 @@
 package org.example;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class QueueKitchen<T> implements AnimalKitchen<T>
 {
-    Queue<T> animals = new ArrayDeque<>();
+    public List<T> animals = new ArrayList<>();
+
+    public ArrayList<T> getListOfAnimals(){
+        return (ArrayList<T>) animals;
+    }
 
     @Override
     public void add(T animal) {
-        animals.add(animal);
+        getListOfAnimals().add(animal);
     }
 
     @Override
     public void feed() {
-         animals.poll();
+        getListOfAnimals().remove(0);
     }
 }

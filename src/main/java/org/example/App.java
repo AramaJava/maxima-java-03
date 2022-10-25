@@ -27,9 +27,10 @@ public class App {
 
         Подсказка: В каждом классе должно быть определено свойство animals типа ArrayList
 */
+        /*
 
 
-
+*/
         Dog sharik = new Dog("Шарик",4,true);
         Cat murzik = new Cat("Мурзик", 4, true);
         Cat barsik = new Cat("Барсик", 3, false);
@@ -37,7 +38,7 @@ public class App {
 
         System.out.println("fifo");
 
-        QueueKitchen queueKitchen = new QueueKitchen();
+        QueueKitchen<Cat> queueKitchen = new QueueKitchen<Cat>();
         queueKitchen.add(sharik);
         queueKitchen.add(murzik);
         queueKitchen.add(barsik);
@@ -53,7 +54,7 @@ public class App {
 
         System.out.println("lifo");
 
-        StackKitchen stackKitchen = new StackKitchen();
+        StackKitchen<Cat> stackKitchen = new StackKitchen<Cat>();
         stackKitchen.add(sharik);
         stackKitchen.add(murzik);
         stackKitchen.add(barsik);
