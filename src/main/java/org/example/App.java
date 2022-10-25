@@ -47,7 +47,7 @@ public class App {
         queueKitchen.feed();
         queueKitchen.feed();
 
-        for (Object animals : queueKitchen.animals) {
+        for (Object animals : queueKitchen.getListOfAnimals()){
             System.out.println(animals);
         }
 
@@ -63,7 +63,7 @@ public class App {
         stackKitchen.feed();
         stackKitchen.feed();
 
-        for (Object animals : stackKitchen.animals) {
+        for (Object animals : stackKitchen.getListOfAnimals()) {
             System.out.println(animals);
         }
     }
