@@ -38,7 +38,7 @@ public class App {
 
         System.out.println("fifo");
 
-        QueueKitchen<Cat> queueKitchen = new QueueKitchen<Cat>();
+        QueueKitchen<Object> queueKitchen = new QueueKitchen<>();
         queueKitchen.add(sharik);
         queueKitchen.add(murzik);
         queueKitchen.add(barsik);
@@ -54,7 +54,7 @@ public class App {
 
         System.out.println("lifo");
 
-        StackKitchen<Cat> stackKitchen = new StackKitchen<Cat>();
+        StackKitchen<Object> stackKitchen = new StackKitchen<>();
         stackKitchen.add(sharik);
         stackKitchen.add(murzik);
         stackKitchen.add(barsik);
