@@ -38,7 +38,7 @@ public class App {
 
         System.out.println("fifo");
 
-        QueueKitchen<Cat> queueKitchen = new QueueKitchen<Cat>();
+        QueueKitchen<Object> queueKitchen = new QueueKitchen<>();
         queueKitchen.add(sharik);
         queueKitchen.add(murzik);
         queueKitchen.add(barsik);
@@ -47,14 +47,14 @@ public class App {
         queueKitchen.feed();
         queueKitchen.feed();
 
-        for (Object animals : queueKitchen.getListOfAnimals()){
+        for (Object animals : queueKitchen.getAnimals()){
             System.out.println(animals);
         }
 
 
         System.out.println("lifo");
 
-        StackKitchen<Cat> stackKitchen = new StackKitchen<Cat>();
+        StackKitchen<Object> stackKitchen = new StackKitchen<>();
         stackKitchen.add(sharik);
         stackKitchen.add(murzik);
         stackKitchen.add(barsik);
@@ -63,7 +63,7 @@ public class App {
         stackKitchen.feed();
         stackKitchen.feed();
 
-        for (Object animals : stackKitchen.getListOfAnimals()) {
+        for (Object animals : stackKitchen.getAnimals()) {
             System.out.println(animals);
         }
     }

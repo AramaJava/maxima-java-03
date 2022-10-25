@@ -1,23 +1,9 @@
 package org.example;
 
-import java.util.*;
-
-public class StackKitchen<T> implements AnimalKitchen<T> {
-
-    private List<T> animals = new ArrayList<>();
-
-    public ArrayList<T> getListOfAnimals(){
-     return (ArrayList<T>) animals;
-    }
-
-    @Override
-    public void add(T animal) {
-        getListOfAnimals().add(animal);
-    }
+public class StackKitchen<T> extends AnimalKitchenMain<T> {
 
     @Override
     public void feed() {
-        getListOfAnimals().remove(getListOfAnimals().size()-1);
-
+        getAnimals().remove(getAnimals().size()-1);
     }
 }
