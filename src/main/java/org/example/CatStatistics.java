@@ -58,10 +58,10 @@ public class CatStatistics {
 
     // возвращает список котов сгруппировав их по первой букве имени и отсортировав группировку по возрастанию.
 
-    static Map<Character, List<Cat>> groupCatsByFirstLetter(ArrayList<Cat> cats) {
+    static Map<String, List<Cat>> groupCatsByFirstLetter(ArrayList<Cat> cats) {
         return cats
                 .stream()
                 .sorted(Comparator.comparing(Cat::getName))
-                .collect(Collectors.groupingBy(s -> s.getName().charAt(0)));
+                .collect(Collectors.groupingBy(s -> s.getName().substring(0,1)));
     }
 }
