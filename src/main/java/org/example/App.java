@@ -14,12 +14,14 @@ public class App {
         Cat murzik = new Cat("Мурзик", 4, true);
         Cat marsel = new Cat("Марсель", 2, false);
         Cat murka = new Cat("Мурка", 5, true);
+        Cat barsik = new Cat("Барсик", 3, false);
 
         ArrayList<Cat> cats = new ArrayList<>();
         cats.add(marusya);
         cats.add(murzik);
         cats.add(marsel);
         cats.add(murka);
+        cats.add(barsik);
 
         System.out.println(sortByNameAscending(cats));
         System.out.println(sortByWeightDescending(cats));
