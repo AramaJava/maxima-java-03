@@ -3,11 +3,11 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AnimalKitchenMain<T> implements AnimalKitchen<T>{
+public abstract class AnimalKitchenMain<T> implements AnimalKitchen<T> {
 
     private final List<T> animals = new ArrayList<>();
 
-    public ArrayList<T> getAnimals(){
+    public ArrayList<T> getAnimals() {
         return (ArrayList<T>) animals;
     }
 
